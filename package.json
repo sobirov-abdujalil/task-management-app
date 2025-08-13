@@ -4,10 +4,14 @@
   "description": "A full-stack task management application with React frontend and Express backend",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "cd frontend && npm run dev",
     "server": "nodemon backend/server.js",
-    "build": "vite build",
-    "preview": "vite preview",
+    "build": "cd frontend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "echo 'Backend build completed'",
+    "preview": "cd frontend && npm run preview",
+    "start": "node backend/server.js",
+    "install:all": "npm install && cd frontend && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
